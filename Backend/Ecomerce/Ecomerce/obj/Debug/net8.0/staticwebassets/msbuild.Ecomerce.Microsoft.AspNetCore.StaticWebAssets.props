@@ -1,0 +1,22 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecomerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecomerce</BasePath>
+      <RelativePath>uploads/products/e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bpkgtpwndt</Fingerprint>
+      <Integrity>MTL4C5Xu2PTtGLQocHSYmFT/8hxFrbv5It0xhkIFjv8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

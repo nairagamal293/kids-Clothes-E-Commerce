@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Ecomerce.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Ecomerce.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Ecomerce.props",
+      "PackagePath": "build\\Ecomerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Ecomerce.props",
+      "PackagePath": "buildMultiTargeting\\Ecomerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Ecomerce.props",
+      "PackagePath": "buildTransitive\\Ecomerce.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

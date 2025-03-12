@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "tWbChQNvOHBE1CcsxnNP3hMMec76kCa+Ni/JJYlt3J4=",
+  "Source": "Ecomerce",
+  "BasePath": "_content/Ecomerce",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Ecomerce\\wwwroot",
+      "Source": "Ecomerce",
+      "ContentRoot": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\",
+      "BasePath": "_content/Ecomerce",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg",
+      "SourceId": "Ecomerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\",
+      "BasePath": "_content/Ecomerce",
+      "RelativePath": "uploads/products/e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpkgtpwndt",
+      "Integrity": "MTL4C5Xu2PTtGLQocHSYmFT/8hxFrbv5It0xhkIFjv8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/products/e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.bpkgtpwndt.jpg",
+      "AssetFile": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "981640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MTL4C5Xu2PTtGLQocHSYmFT/8hxFrbv5It0xhkIFjv8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:34:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpkgtpwndt"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MTL4C5Xu2PTtGLQocHSYmFT/8hxFrbv5It0xhkIFjv8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg",
+      "AssetFile": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "981640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MTL4C5Xu2PTtGLQocHSYmFT/8hxFrbv5It0xhkIFjv8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:34:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MTL4C5Xu2PTtGLQocHSYmFT/8hxFrbv5It0xhkIFjv8="
+        }
+      ]
+    }
+  ]
+}
