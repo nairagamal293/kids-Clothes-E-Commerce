@@ -8,8 +8,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "loginUser",
-        "Type": "Ecomerce.Entities.User",
+        "Name": "loginDto",
+        "Type": "Ecomerce.DTOs.LoginDto",
         "IsRequired": true
       }
     ],
@@ -24,8 +24,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "Ecomerce.Entities.User",
+        "Name": "registerDto",
+        "Type": "Ecomerce.DTOs.RegisterDto",
         "IsRequired": true
       }
     ],
@@ -197,6 +197,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactController",
+    "Method": "CreateContactMessage",
+    "RelativePath": "api/contact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "Ecomerce.Entities.ContactMessage",
         "IsRequired": true
       }
     ],

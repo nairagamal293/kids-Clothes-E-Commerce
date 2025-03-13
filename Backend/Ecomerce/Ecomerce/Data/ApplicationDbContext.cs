@@ -20,6 +20,7 @@ namespace Ecomerce.Data
         public DbSet<Review> Reviews { get; set; }
         public DbSet<ShippingAddress> ShippingAddresses { get; set; }
         public DbSet<Discount> Discounts { get; set; }
+        public DbSet<ContactMessage> ContactMessages { get; set; }
         public DbSet<Payment> Payments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

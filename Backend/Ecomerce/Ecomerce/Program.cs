@@ -1,5 +1,6 @@
 ﻿using Ecomerce.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -25,8 +26,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // ✅ Enable CORS (Allow frontend to call APIs)
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend",
-        policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+    options.AddPolicy("AllowAllOrigins",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
 });
 
 // ✅ Configure JWT Authentication
@@ -36,6 +42,8 @@ var key = Encoding.UTF8.GetBytes(jwtSettings["Key"] ?? throw new InvalidOperatio
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
+        options.RequireHttpsMetadata = false; // ✅ Allow HTTP in development
+        options.SaveToken = true;
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true,
@@ -60,12 +68,36 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // ✅ Serve static files (e.g., images)
 
-app.UseStaticFiles();  // ✅ Serve static files (e.g., images)
-app.UseCors("AllowFrontend"); // ✅ Enable CORS
-app.UseAuthentication(); // ✅ Authentication must be before Authorization
+// ✅ Enable CORS (must be placed before UseAuthentication and UseAuthorization)
+app.UseCors("AllowAllOrigins");
+
+// ✅ Enable Authentication and Authorization
+app.UseAuthentication();
 app.UseAuthorization();
 
+// ✅ Map Controllers
 app.MapControllers();
+
+// ✅ Global Exception Handling (without Serilog)
+app.UseExceptionHandler(errorApp =>
+{
+    errorApp.Run(async context =>
+    {
+        context.Response.StatusCode = StatusCodes.Status500InternalServerError;
+        context.Response.ContentType = "application/json";
+
+        var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+        if (exceptionHandlerPathFeature?.Error != null)
+        {
+            Console.WriteLine("Error: " + exceptionHandlerPathFeature.Error.Message); // Log to Console
+            await context.Response.WriteAsJsonAsync(new
+            {
+                message = "An unexpected error occurred."
+            });
+        }
+    });
+});
 
 app.Run();
