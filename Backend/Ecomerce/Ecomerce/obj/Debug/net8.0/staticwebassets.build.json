@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tWbChQNvOHBE1CcsxnNP3hMMec76kCa+Ni/JJYlt3J4=",
+  "Hash": "vwXjta0Fx2uju2Z1wSKZXHk1MIPJHL/pnQxLJOpTD50=",
   "Source": "Ecomerce",
   "BasePath": "_content/Ecomerce",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg",
+      "SourceId": "Ecomerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\",
+      "BasePath": "_content/Ecomerce",
+      "RelativePath": "uploads/products/08f05413-fac5-4940-8453-a70decdefc74_2148333098#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yi7hgt535y",
+      "Integrity": "WvQ92WOd/WUhnK+n0ti7F8OpcCRlD94MSKIsdokcPV0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg"
+    },
     {
       "Identity": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg",
       "SourceId": "Ecomerce",
@@ -36,9 +57,133 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg"
+    },
+    {
+      "Identity": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg",
+      "SourceId": "Ecomerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\",
+      "BasePath": "_content/Ecomerce",
+      "RelativePath": "uploads/products/eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1xdnjwos28",
+      "Integrity": "NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg"
+    },
+    {
+      "Identity": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg",
+      "SourceId": "Ecomerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\",
+      "BasePath": "_content/Ecomerce",
+      "RelativePath": "uploads/products/f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1xdnjwos28",
+      "Integrity": "NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "uploads/products/08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg",
+      "AssetFile": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "647343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WvQ92WOd/WUhnK+n0ti7F8OpcCRlD94MSKIsdokcPV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 10:04:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WvQ92WOd/WUhnK+n0ti7F8OpcCRlD94MSKIsdokcPV0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/08f05413-fac5-4940-8453-a70decdefc74_2148333098.yi7hgt535y.jpg",
+      "AssetFile": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "647343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WvQ92WOd/WUhnK+n0ti7F8OpcCRlD94MSKIsdokcPV0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 10:04:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yi7hgt535y"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WvQ92WOd/WUhnK+n0ti7F8OpcCRlD94MSKIsdokcPV0="
+        }
+      ]
+    },
     {
       "Route": "uploads/products/e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.bpkgtpwndt.jpg",
       "AssetFile": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg",
@@ -118,6 +263,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-MTL4C5Xu2PTtGLQocHSYmFT/8hxFrbv5It0xhkIFjv8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.1xdnjwos28.jpg",
+      "AssetFile": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 10:26:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1xdnjwos28"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg",
+      "AssetFile": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 10:26:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.1xdnjwos28.jpg",
+      "AssetFile": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 10:26:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1xdnjwos28"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg",
+      "AssetFile": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Mar 2025 10:26:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M="
         }
       ]
     }

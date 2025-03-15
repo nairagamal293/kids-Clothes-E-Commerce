@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Ecomerce/uploads/products/08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WvQ92WOd/WUhnK\u002Bn0ti7F8OpcCRlD94MSKIsdokcPV0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"647343"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022WvQ92WOd/WUhnK\u002Bn0ti7F8OpcCRlD94MSKIsdokcPV0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Mar 2025 10:04:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Ecomerce/uploads/products/08f05413-fac5-4940-8453-a70decdefc74_2148333098.yi7hgt535y.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yi7hgt535y"},{"Name":"integrity","Value":"sha256-WvQ92WOd/WUhnK\u002Bn0ti7F8OpcCRlD94MSKIsdokcPV0="},{"Name":"label","Value":"_content/Ecomerce/uploads/products/08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"647343"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022WvQ92WOd/WUhnK\u002Bn0ti7F8OpcCRlD94MSKIsdokcPV0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Mar 2025 10:04:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Ecomerce/uploads/products/e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.bpkgtpwndt.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -11,6 +23,30 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MTL4C5Xu2PTtGLQocHSYmFT/8hxFrbv5It0xhkIFjv8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"981640"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MTL4C5Xu2PTtGLQocHSYmFT/8hxFrbv5It0xhkIFjv8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 11:34:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Ecomerce/uploads/products/eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.1xdnjwos28.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1xdnjwos28"},{"Name":"integrity","Value":"sha256-NZlGLLTk2mZ\u002BUdEvXHRvTL8ixcyViio3ubCCDS9lL8M="},{"Name":"label","Value":"_content/Ecomerce/uploads/products/eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"281199"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022NZlGLLTk2mZ\u002BUdEvXHRvTL8ixcyViio3ubCCDS9lL8M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Mar 2025 10:26:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Ecomerce/uploads/products/eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NZlGLLTk2mZ\u002BUdEvXHRvTL8ixcyViio3ubCCDS9lL8M="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"281199"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022NZlGLLTk2mZ\u002BUdEvXHRvTL8ixcyViio3ubCCDS9lL8M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Mar 2025 10:26:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Ecomerce/uploads/products/f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.1xdnjwos28.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1xdnjwos28"},{"Name":"integrity","Value":"sha256-NZlGLLTk2mZ\u002BUdEvXHRvTL8ixcyViio3ubCCDS9lL8M="},{"Name":"label","Value":"_content/Ecomerce/uploads/products/f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"281199"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022NZlGLLTk2mZ\u002BUdEvXHRvTL8ixcyViio3ubCCDS9lL8M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Mar 2025 10:26:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Ecomerce/uploads/products/f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NZlGLLTk2mZ\u002BUdEvXHRvTL8ixcyViio3ubCCDS9lL8M="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"281199"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022NZlGLLTk2mZ\u002BUdEvXHRvTL8ixcyViio3ubCCDS9lL8M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 15 Mar 2025 10:26:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

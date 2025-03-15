@@ -1,8 +1,20 @@
 {
   "Files": [
     {
+      "Id": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg"
+    },
+    {
       "Id": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg",
       "PackagePath": "staticwebassets\\uploads\\products\\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg"
+    },
+    {
+      "Id": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg"
+    },
+    {
+      "Id": "D:\\Naira\\Website\\Backend\\Ecomerce\\Ecomerce\\wwwroot\\uploads\\products\\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Ecomerce.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

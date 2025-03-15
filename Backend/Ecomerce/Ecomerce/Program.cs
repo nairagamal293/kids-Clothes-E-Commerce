@@ -7,7 +7,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ Add Controllers with JSON serialization settings
+// ✅ Configure Controllers with JSON settings
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
@@ -15,7 +15,7 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.WriteIndented = true;
     });
 
-// ✅ Enable Swagger
+// ✅ Enable Swagger (for API documentation)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -23,26 +23,34 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// ✅ Enable CORS (Allow frontend to call APIs)
+// ✅ Enable CORS (Allow frontend requests)
+const string CorsPolicyName = "AllowFrontend";
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins",
-        builder =>
+    options.AddPolicy(CorsPolicyName,
+        policy =>
         {
-            builder.AllowAnyOrigin()
-                   .AllowAnyHeader()
-                   .AllowAnyMethod();
+            policy.WithOrigins("http://127.0.0.1:5500") // ✅ Allow frontend
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
         });
 });
 
+
+
 // ✅ Configure JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("Jwt");
-var key = Encoding.UTF8.GetBytes(jwtSettings["Key"] ?? throw new InvalidOperationException("JWT Key is missing"));
+var key = jwtSettings["Key"];
+if (string.IsNullOrEmpty(key))
+{
+    throw new InvalidOperationException("JWT Key is missing in appsettings.json");
+}
 
+var keyBytes = Encoding.UTF8.GetBytes(key);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        options.RequireHttpsMetadata = false; // ✅ Allow HTTP in development
+        options.RequireHttpsMetadata = false; // ✅ Allow HTTP during development
         options.SaveToken = true;
         options.TokenValidationParameters = new TokenValidationParameters
         {
@@ -52,7 +60,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
             ValidIssuer = jwtSettings["Issuer"],
             ValidAudience = jwtSettings["Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(key)
+            IssuerSigningKey = new SymmetricSecurityKey(keyBytes)
         };
     });
 
@@ -67,20 +75,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// ✅ Serve static files (for images, etc.)
 app.UseHttpsRedirection();
-app.UseStaticFiles(); // ✅ Serve static files (e.g., images)
+app.UseStaticFiles();
 
-// ✅ Enable CORS (must be placed before UseAuthentication and UseAuthorization)
-app.UseCors("AllowAllOrigins");
+// ✅ Enable CORS (Before Authentication)
+app.UseCors(CorsPolicyName);
 
-// ✅ Enable Authentication and Authorization
+// ✅ Enable Authentication & Authorization
 app.UseAuthentication();
 app.UseAuthorization();
 
-// ✅ Map Controllers
-app.MapControllers();
-
-// ✅ Global Exception Handling (without Serilog)
+// ✅ Global Exception Handling
 app.UseExceptionHandler(errorApp =>
 {
     errorApp.Run(async context =>
@@ -88,16 +94,24 @@ app.UseExceptionHandler(errorApp =>
         context.Response.StatusCode = StatusCodes.Status500InternalServerError;
         context.Response.ContentType = "application/json";
 
-        var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
-        if (exceptionHandlerPathFeature?.Error != null)
+        var exceptionFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+        if (exceptionFeature?.Error != null)
         {
-            Console.WriteLine("Error: " + exceptionHandlerPathFeature.Error.Message); // Log to Console
-            await context.Response.WriteAsJsonAsync(new
+            Console.WriteLine($"Error: {exceptionFeature.Error.Message}"); // Log error
+
+            var errorResponse = new
             {
-                message = "An unexpected error occurred."
-            });
+                message = "An unexpected error occurred.",
+                details = app.Environment.IsDevelopment() ? exceptionFeature.Error.StackTrace : null
+            };
+
+            await context.Response.WriteAsJsonAsync(errorResponse);
         }
     });
 });
 
+// ✅ Map Controllers
+app.MapControllers();
+
+// ✅ Start the App
 app.Run();

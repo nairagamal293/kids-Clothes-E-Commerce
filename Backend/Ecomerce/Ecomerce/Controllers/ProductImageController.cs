@@ -24,12 +24,33 @@ namespace Ecomerce.Controllers
         }
 
         // ✅ Get all product images
+        
         [HttpGet]
-        public async Task<IActionResult> GetProductImages()
+        public async Task<ActionResult<IEnumerable<object>>> GetProducts()
         {
-            var images = await _context.ProductImages.ToListAsync();
-            return Ok(images);
+            var products = await _context.Products
+                 .Include(p => p.ProductImages)
+                 .Include(p => p.ProductSizes)
+                 .Include(p => p.Category) // ✅ Include category
+                 .Select(p => new
+                 {
+                     p.Id,
+                     p.Name,
+                     p.Description,
+                     p.Quantity,
+                     p.SKU,
+                     p.IsFeatured,
+                     p.CreatedAt,
+                     Category = p.Category != null ? p.Category.Name : "Uncategorized", // ✅ Handle null category
+                     Images = p.ProductImages.Select(img => new { img.ImagePath, img.IsMainImage }).ToList(),
+                     Sizes = p.ProductSizes.Select(s => new { s.Size, s.Price }).ToList()
+                 })
+                 .ToListAsync();
+
+
+            return Ok(products);
         }
+
 
         // ✅ Upload an image
         [HttpPost("upload")]

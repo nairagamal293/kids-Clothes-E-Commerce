@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecomerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecomerce</BasePath>
+      <RelativePath>uploads/products/08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yi7hgt535y</Fingerprint>
+      <Integrity>WvQ92WOd/WUhnK+n0ti7F8OpcCRlD94MSKIsdokcPV0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\08f05413-fac5-4940-8453-a70decdefc74_2148333098.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Ecomerce</SourceId>
@@ -17,6 +35,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\e8252a8d-aa59-44f2-8dcc-bca12e85e24c_2148251497.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecomerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecomerce</BasePath>
+      <RelativePath>uploads/products/eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1xdnjwos28</Fingerprint>
+      <Integrity>NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\eb8a50fb-cda8-4f49-a393-b8505896b7e2_15903.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecomerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecomerce</BasePath>
+      <RelativePath>uploads/products/f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1xdnjwos28</Fingerprint>
+      <Integrity>NZlGLLTk2mZ+UdEvXHRvTL8ixcyViio3ubCCDS9lL8M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\products\f451a1f5-b5f5-4542-9240-446b5f0f7d8e_15903.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

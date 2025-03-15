@@ -286,4 +286,3 @@ D:\Naira\Website\Backend\Ecomerce\Ecomerce\obj\Debug\net8.0\refint\Ecomerce.dll
 D:\Naira\Website\Backend\Ecomerce\Ecomerce\obj\Debug\net8.0\Ecomerce.pdb
 D:\Naira\Website\Backend\Ecomerce\Ecomerce\obj\Debug\net8.0\Ecomerce.genruntimeconfig.cache
 D:\Naira\Website\Backend\Ecomerce\Ecomerce\obj\Debug\net8.0\ref\Ecomerce.dll
-D:\Naira\Website\Backend\Ecomerce\Ecomerce\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

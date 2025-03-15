@@ -11,6 +11,7 @@ namespace Ecomerce.Controllers
     [Route("api/users")]
     [ApiController]
     public class UsersController : ControllerBase
+
     {
         private readonly ApplicationDbContext _context;
 
@@ -23,8 +24,15 @@ namespace Ecomerce.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            return await _context.Users.ToListAsync();
+            var users = await _context.Users.ToListAsync();
+
+            // Debugging output
+            Console.WriteLine($"Returning Users: {System.Text.Json.JsonSerializer.Serialize(users)}");
+
+            return Ok(users); // ✅ Must return an array `[]`
         }
+
+
 
         // GET: api/users/{id}
         [HttpGet("{id}")]
@@ -52,33 +60,24 @@ namespace Ecomerce.Controllers
 
         // PUT: api/users/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, User user)
+        public async Task<IActionResult> UpdateUser(int id, User updatedUser)
         {
-            if (id != user.Id)
+            var existingUser = await _context.Users.FindAsync(id);
+            if (existingUser == null)
             {
-                return BadRequest();
+                return NotFound();
             }
 
-            _context.Entry(user).State = EntityState.Modified;
+            // Update only necessary fields
+            existingUser.Name = updatedUser.Name;
+            existingUser.Email = updatedUser.Email;
+            existingUser.Role = updatedUser.Role;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UserExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(existingUser); // ✅ Return updated user
         }
+
 
         // DELETE: api/users/{id}
         [HttpDelete("{id}")]

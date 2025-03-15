@@ -19,10 +19,29 @@ public class ProductsController : ControllerBase
 
     // GET: api/products
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+    public async Task<ActionResult<IEnumerable<object>>> GetProducts()
     {
-        return await _context.Products.ToListAsync();
+        var products = await _context.Products
+            .Include(p => p.ProductImages) // ✅ Ensure images are included
+            .Include(p => p.ProductSizes)  // ✅ Ensure sizes are included
+            .Select(p => new
+            {
+                p.Id,
+                p.Name,
+                p.Description,
+                p.Quantity,
+                p.SKU,
+                p.IsFeatured,
+                p.CreatedAt,
+                Images = p.ProductImages.Select(img => new { img.ImagePath, img.IsMainImage }).ToList(),
+                Sizes = p.ProductSizes.Select(s => new { s.Size, s.Price }).ToList()
+            })
+            .ToListAsync();
+
+        return Ok(products);
     }
+
+
 
     // GET: api/products/{id}
     [HttpGet("{id}")]
